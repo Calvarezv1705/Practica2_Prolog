@@ -91,7 +91,7 @@ percentLegacy(1, 30).
 percentLegacy(2, 20).
 percentLegacy(3, 10).
 
-% Distribución de herencia (modificado para incluir el testador)
+% Distribución de herencia
 legacyMoney(_, _, [], []).
 legacyMoney(Testador, LegacyTotal, [Family|F], [Distribution|F2]) :-
     levelConsanguinity(Family, Testador, Level),
